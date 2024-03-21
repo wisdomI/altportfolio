@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  background-color: black;
+
+  /* height: auto; */
+}
+/* 
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  z-index: 1;
+
+  backdrop-filter: blur(15px);
+} */
+
+.app-container {
+  background: black;
+
+  display: grid;
+  grid-template-areas: 
+  'header header'
+  'nav content'
+  'footer footer';
+
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 50px 1fr;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.header-wrapper {
+  grid-area: header;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 50px;
+  padding: 20px 0;
+  z-index: 1;
+
+  backdrop-filter: blur(15px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-pane {
+  grid-area: nav;
+  overflow-y: auto; 
+
+  position: fixed;
+
+  top: 0;
+  bottom: 0;
+  margin-top: 130px;
+
+  overflow: hidden;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.right-pane {
+  grid-area: content;
+
+  /* width: 100%;  */
+ /* overflow-y: auto;  */
+ /* position: relative;  */
+
+ margin-left: 50px;
+ margin-top: 100px;
+
+
+ top: 10;
+ bottom: 0; 
+
+ display: flex;
+ flex-direction: column;
+ gap: 150px;
+} 
+
+/* 
+
+.app {
+  
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+} 
+
+ .app-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 100px ; 
 }
 
-.App-link {
-  color: #61dafb;
-}
+*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1000px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .left-pane {
+    margin: 65px 0;
+
+
+    display: flex;
+    justify-content: center;
+    /* padding: 30px 0; */
+    height: 100px;
+    width: 100%;
+
+    background-color: black;
+  }
+
+  .right-pane {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
   }
 }

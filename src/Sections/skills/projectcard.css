@@ -1,0 +1,40 @@
+* {
+    color: white;
+    background: transparent;
+}
+
+.p-wrapper {
+    border: none;
+    width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.text {
+    width: 300px;
+    /* text-align: center; */
+    color: #929090;
+}
+
+@media screen and (max-width: 1000px) {
+    .p-wrapper {
+        width: 210px;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+    .project-img {
+        width: 200px;
+        height: 150px;
+    }
+}

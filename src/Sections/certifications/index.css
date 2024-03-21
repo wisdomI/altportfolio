@@ -1,0 +1,62 @@
+* {
+    background-color: transparent;
+}
+
+
+
+
+/* CARD SECTION */
+.c-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    width: 200px;
+    
+    border: 1px solid white;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cert-btn {
+    width: 70px;
+    height: 40px;
+
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+a {
+    color: black;
+}
+
+.section-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+}
+
+.description {
+    font-size: 0.8rem;
+
+}
+
+.render-certificate-wrapper {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+    .section-wrapper, .section-wrapper h1 {
+        font-size: 1.2rem;
+    }
+
+    .section-wrapper {
+        gap: 10px;
+    }
+}

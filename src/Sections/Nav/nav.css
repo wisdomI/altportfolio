@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    scroll-behavior: smooth;
+}
+
+.nav-wrapper {
+    color: #929090;
+    padding: 30px 50px;
+}
+li {
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.main-active-nav {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.main-default {
+    color: #929090; 
+    font-size: 1.5rem;
+    font-weight: 800; 
+}
+
+
+@media  screen and (max-width: 1000px) {
+    .nav-list {
+        flex-direction: row;
+    }  
+
+    .social-icons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        justify-content: center;
+        align-items: center;
+
+        justify-self: center;
+        align-self: center;
+    }
+
+}
+@media  screen and (max-width: 680px) {
+
+    .social-icons{
+        gap: 5px;
+    }
+
+    .main-active-nav, .main-default {
+        font-size: 1.2rem;
+    }
+
+    /* .nav-list {
+        border: 1px solid white;
+        padding: 0 10px;
+        border-radius: 10px;
+    } */
+}
+
+@media  screen and (max-width: 745px) {
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 2px;
+
+        padding: 70px 0 50px 0;
+
+    }
+}
+
+@media  screen and (max-width: 450px) {
+    .main-active-nav, .main-default {
+        font-size: .8rem;
+    }
+}

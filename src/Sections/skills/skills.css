@@ -1,0 +1,127 @@
+* {
+    color: white;
+    background: transparent;
+}
+
+
+.skills-section-header {
+    padding-bottom: 50px;
+}
+
+.main-skills-wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    width: 1px;
+    background-color: #929090;
+    /* margin-left: 20px; */
+}
+
+.other-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* SKILLS NAV */
+.skills-mini-nav {
+    display: flex;
+    gap: 50px;
+
+    margin-bottom: 50px;
+}
+
+.skills-mini-nav button {
+    border: none;
+    
+}
+
+.default {
+    color: #929090;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.active-nav {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+
+
+
+/* CARD AREA */
+.card-wrapper {
+    border: 1px solid white;
+    width: 210px;
+    padding: 10px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.card-render-wrapper{
+    display: none;
+}
+
+.active-tab {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-active-tab {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+
+.card-text {
+    width: 200px;
+    text-align: center;
+    color: #929090;
+}
+
+@media screen and (max-width: 1000px) {
+    .active-nav, .default, .other-skills h2{
+        font-size: 1rem;
+    }
+    
+    .other-skills {
+        gap: 10px;
+    }
+
+    .skills-section-header {
+        font-size: 1.2rem;
+        padding-bottom: 10px ;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .active-tab {
+        justify-content: flex-start;
+       
+    }
+}
