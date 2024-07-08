@@ -1,12 +1,30 @@
-import React from 'react'
+// import React, { useEffect, useRef } from 'react'
 import './about.css'
 import Downloadbutton from '../../Components/buttons/downloadbutton'
-
-
+// import { useActiveSection } from '../../context/ActiveSectionContext'
 
 
 export default function About() {
+    
+    // const {setActiveSection} = useActiveSection
+    // const sectionRef = useRef(null)
+
+    // useEffect(() => {
+        // const observer = new IntersectionObserver(([entry])=> {
+        //     if (entry.isIntersecting) {
+        //         setActiveSection('about')
+        //     }
+        // })
+
+        // observer.observe(sectionRef.current);
+
+        // return () => observer.disconnect();
+    // }, [setActiveSection]);
+
+
+
   return (
+    // <div ref={sectionRef} className='main-wrapper' id='about'>
     <div className='main-wrapper' id='about'>
         <div className="line"> </div>
         
