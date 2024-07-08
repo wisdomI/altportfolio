@@ -4,28 +4,21 @@ export const data = [
     {
         id:1,
         title: 'WEB PROGRAMMER',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quosatque, cum totam unde accusantium impedit minus aut maxime mollitia dolores iure inventore rem aliquam laborum ratione illum? Ipsam, suscipit nulla.',
+        description: 'As a Frontend Web Developer, I create visually appealing and user-friendly interfaces. I ensure seamless user experiences with responsive designs and optimized performance, collaborating closely with designers and backend developers.',
         images : '',
         link: ' '
     },
     {
         id:2,
-        title: 'DESIGNER',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quosatque, cum totam unde accusantium impedit minus aut maxime mollitia dolores iure inventore rem aliquam laborum ratione illum? Ipsam, suscipit nulla.',
+        title: 'UI/UX DESIGNER',
+        description: 'Having a background in UI/UX Design, I craft intuitive and engaging user interfaces through detailed wireframes and prototypes. I enhance user satisfaction by conducting usability testing and refining designs based on feedback.',
         images : '',
         link: ' '
     },
     {
         id:3,
-        title: 'DIGITAL MARKETER',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quosatque, cum totam unde accusantium impedit minus aut maxime mollitia dolores iure inventore rem aliquam laborum ratione illum? Ipsam, suscipit nulla.',
-        images : '',
-        link: ' '
-    },
-    {
-        id:4,
         title: 'DIGITAL MEDIA EXPERT',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quosatque, cum totam unde accusantium impedit minus aut maxime mollitia dolores iure inventore rem aliquam laborum ratione illum? Ipsam, suscipit nulla.',
+        description: 'With background in Digital Media, I produce and manage engaging content across various digital platforms. I analyze performance metrics to refine strategies and maximize audience reach.',
         images : '',
         link: ' '
     },
