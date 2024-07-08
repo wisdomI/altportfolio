@@ -6,7 +6,6 @@ import Header from "../Sections/header/header";
 import Certification from "../Sections/certifications";
 import ContactMe from "../Sections/contact me/contact";
 // import{ ActiveSection } from "../context/ActiveSectionContext";
-// import SplitPane from 'react-split-pane';
 
 function Index() {
   return (
