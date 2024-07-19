@@ -8,6 +8,8 @@ export default function Certification() {
     return <CertificationCard key={e.id} {...e} />;
   });
 
+  // ref={myRef.current[1]}
+
   return (
     <div className="main-skills-wrapper" id="certifications">
       <div className="line"> </div>

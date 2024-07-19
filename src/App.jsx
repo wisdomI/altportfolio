@@ -1,9 +1,14 @@
-
+import { useEffect } from 'react';
 import './App.css';
 import Index from './Pages';
-// import SplitPane from 'react-split-pane';
+
+
 
 const App = () => {
+
+  useEffect(() => {
+    document.title = " Wisdom Iwunwa";
+  });
 
   return (
     < div>
